@@ -34,13 +34,7 @@
 Для улучшения уровня безопасности, когда будешь размещать сайт на сервере, сделай файл .env с таким содержимым:
 
 ```
-HOST='<имя хоста>'
-HOST_PORT=<номер порта>
-DB_NAME='<имя базы данных>'
-DB_USER='<имя пользователя базы данных>'
-DB_USER_PASSWORD='<пароль пользователя базы данных>'
-
-DB_URL = postgres://${DB_USER}:${DB_USER_PASSWORD}@${HOST}:${HOST_PORT}/${DB_NAME}
+DATABASE_URL=postgres://user:password@host:5434
 
 DEBUG=False
 SECRET_KEY='длинная строка символов'
